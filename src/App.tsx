@@ -6,16 +6,16 @@ function App() {
 		<>
 			<ul>
 				<li>
-					<Link to="/a">/a</Link>
+					<Link to="/a">/a (works)</Link>
 				</li>
 				<li>
-					<Link to="/b">/b</Link>
+					<Link to="/b">/b (works)</Link>
 				</li>
 				<li>
-					<Link to="/c">/c</Link>
+					<Link to="/c">/c (works)</Link>
 				</li>
 				<li>
-					<Link to="/d">/d</Link>
+					<Link to="/d">/d (broken)</Link>
 				</li>
 			</ul>
 			<Suspense fallback={<div>Loading...</div>}>

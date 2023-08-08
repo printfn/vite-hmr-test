@@ -8,6 +8,5 @@ const mapStateToProps = () => {
 	return {};
 };
 
-// I know this should be using hooks instead
 const WrappedComponent = connect(mapStateToProps, {})(FunctionalComponent);
 export default WrappedComponent;

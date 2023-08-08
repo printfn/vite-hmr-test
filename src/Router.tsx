@@ -5,13 +5,15 @@ import {
 	createRoutesFromElements,
 } from "react-router-dom";
 import App from "./App";
-import FunctionalComponent from "components/FunctionalComponent";
-import ClassComponent from "components/ClassComponent";
+import FunctionalComponent from "./components/FunctionalComponent";
+import ClassComponent from "./components/ClassComponent";
 import { lazy } from "react";
 
-const LazyClassComponent = lazy(() => import("components/LazyClassComponent"));
+const LazyClassComponent = lazy(
+	() => import("./components/LazyClassComponent"),
+);
 const LazyFunctionalComponent = lazy(
-	() => import("components/LazyFunctionalComponent"),
+	() => import("./components/LazyFunctionalComponent"),
 );
 
 const routes = createBrowserRouter(
